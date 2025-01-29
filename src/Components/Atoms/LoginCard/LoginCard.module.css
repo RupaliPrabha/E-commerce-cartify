@@ -1,0 +1,105 @@
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem 2rem 1rem 2rem;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+  }
+  
+  
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Spacing between form elements */
+  }
+  
+  .login_form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+
+  .login_form__label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    color: #ffffff;
+    text-align: justify;
+  }
+  
+  
+  .login_form__input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3); /* Transparent input background */
+    color: #ffffff;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Inner shadow for input */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .login_form__input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Highlight on focus */
+  }
+  
+  .login-card__btn {
+    padding: 0.8rem 1.5rem;
+    margin: 1.5rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Vibrant button gradient */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .login-card__btn:hover {
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+    background: linear-gradient(135deg, #00d4ff, #0099ff); /* Slight color shift */
+  }
+  
+  .login-card__btn:active {
+    transform: translateY(1px); /* Button press effect */
+  }
+  
+  .login-card_user {
+    
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Link Styling */
+  .login-card_newuser {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .login-card_newuser:hover {
+    color: #1b0238;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-card {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
